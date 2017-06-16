@@ -11,12 +11,23 @@ import FacebookCore
 import FacebookLogin
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
+import RealmSwift
 
 class LoginViewController: UIViewController, LoginButtonDelegate {
+    @IBOutlet weak var user: UITextField!
 
+    @IBOutlet weak var schoolYear: UITextField!
+    
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        ref = Database.database().reference()
+        
+        
         if let accessToken = AccessToken.current {
             //already logged on
             AccessToken.current?.userId
@@ -31,6 +42,12 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func addUser(_ sender: Any){
+        ref?.child("Users").childByAutoId().setValue(user.text)
+        ref?.child("Users").childByAutoId().setValue(schoolYear.text)
+        
+    }
+    
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
         
         let credential = FacebookAuthProvider.credential(withAccessToken: (AccessToken.current?.authenticationToken)!)

@@ -13,6 +13,8 @@ class PiesViewController: UIViewController {
     var numString = String()
     var denomString = String()
     
+    @IBOutlet weak var frac: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,10 +25,12 @@ class PiesViewController: UIViewController {
           let denomInt = Int(denomString)
           let denomFloat = CGFloat((denomInt)!)
      
+        frac.text = " \(numString) / \(denomString)"
+        
         let pieChartView = PieChartView()
         pieChartView.frame = CGRect(x: 0, y: 100, width: view.frame.size.width, height: 300)
         pieChartView.segments = [
-            Segment(color: .red, value: numFloat),
+            Segment(color: .white, value: numFloat),
             Segment(color: .blue, value: denomFloat - numFloat),
             // Segment(color: .green, value: 30),
             // Segment(color: .yellow, value: 40)

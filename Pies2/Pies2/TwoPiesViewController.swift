@@ -10,6 +10,9 @@ import UIKit
 
 class TwoPiesViewController: UIViewController {
 
+    @IBOutlet weak var frac1: UILabel!
+    
+    @IBOutlet weak var frac2: UILabel!
     
     var numString1 = String()
     var denomString1 = String()
@@ -32,10 +35,14 @@ class TwoPiesViewController: UIViewController {
         let denomInt2 = Int(denomString2)
         let denomFloat2 = CGFloat((denomInt2)!)
         
+        frac1.text = " \(numString1) / \(denomString1)"
+        
+        frac2.text = " \(numString2) / \(denomString2)"
+        
         let pieChartView1 = PieChartView()
         pieChartView1.frame = CGRect(x: 0, y: 100, width: view.frame.size.width, height: 300)
         pieChartView1.segments = [
-            Segment(color: .red, value: numFloat1),
+            Segment(color: .white, value: numFloat1),
             Segment(color: .blue, value: denomFloat1 - numFloat1),
         ]
         view.addSubview(pieChartView1)
@@ -43,7 +50,7 @@ class TwoPiesViewController: UIViewController {
         let pieChartView2 = PieChartView()
         pieChartView2.frame = CGRect(x: 0, y: 400, width: view.frame.size.width, height: 300)
         pieChartView2.segments = [
-            Segment(color: .red, value: numFloat2),
+            Segment(color: .white, value: numFloat2),
             Segment(color: .blue, value: denomFloat2 - numFloat2),
            
         ]

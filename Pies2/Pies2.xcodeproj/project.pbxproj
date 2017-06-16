@@ -17,7 +17,6 @@
 		DCE744281EF0203300C2C240 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE744271EF0203300C2C240 /* LoginViewController.swift */; };
 		DCE7442C1EF0315400C2C240 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE7442B1EF0315400C2C240 /* GoogleService-Info.plist */; };
 		DCE7442E1EF0351B00C2C240 /* CreatePiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7442D1EF0351B00C2C240 /* CreatePiesViewController.swift */; };
-		DCE744301EF03B8000C2C240 /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7442F1EF03B8000C2C240 /* Fraction.swift */; };
 		DCE744321EF1EDE400C2C240 /* PiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE744311EF1EDE400C2C240 /* PiesViewController.swift */; };
 		DCE744341EF2ABA400C2C240 /* CreateTwoPiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE744331EF2ABA400C2C240 /* CreateTwoPiesViewController.swift */; };
 		DCE744361EF2AC6400C2C240 /* TwoPiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE744351EF2AC6400C2C240 /* TwoPiesViewController.swift */; };
@@ -38,7 +37,6 @@
 		DCE744271EF0203300C2C240 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DCE7442B1EF0315400C2C240 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCE7442D1EF0351B00C2C240 /* CreatePiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePiesViewController.swift; sourceTree = "<group>"; };
-		DCE7442F1EF03B8000C2C240 /* Fraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
 		DCE744311EF1EDE400C2C240 /* PiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiesViewController.swift; sourceTree = "<group>"; };
 		DCE744331EF2ABA400C2C240 /* CreateTwoPiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTwoPiesViewController.swift; sourceTree = "<group>"; };
 		DCE744351EF2AC6400C2C240 /* TwoPiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoPiesViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				DCE744271EF0203300C2C240 /* LoginViewController.swift */,
 				DCE7442B1EF0315400C2C240 /* GoogleService-Info.plist */,
 				DCE7442D1EF0351B00C2C240 /* CreatePiesViewController.swift */,
-				DCE7442F1EF03B8000C2C240 /* Fraction.swift */,
 				DCE744311EF1EDE400C2C240 /* PiesViewController.swift */,
 				DCE744331EF2ABA400C2C240 /* CreateTwoPiesViewController.swift */,
 				DCE744351EF2AC6400C2C240 /* TwoPiesViewController.swift */,
@@ -241,7 +238,6 @@
 				DCE744321EF1EDE400C2C240 /* PiesViewController.swift in Sources */,
 				DCE7442E1EF0351B00C2C240 /* CreatePiesViewController.swift in Sources */,
 				DCE744241EF010D600C2C240 /* PieChart.swift in Sources */,
-				DCE744301EF03B8000C2C240 /* Fraction.swift in Sources */,
 				DCE744141EEFCEA000C2C240 /* ViewController.swift in Sources */,
 				DCE744341EF2ABA400C2C240 /* CreateTwoPiesViewController.swift in Sources */,
 				DCE744361EF2AC6400C2C240 /* TwoPiesViewController.swift in Sources */,

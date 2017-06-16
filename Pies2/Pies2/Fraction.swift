@@ -8,18 +8,18 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class Fraction  {
+class Fraction: Object  {
     
-    var numerator: String?
-    var denominator: String?
-    var image: UIImage?
+    dynamic var numerator = " "
+    dynamic var denominator = " "
     
-    init?(numerator: String?, denominator: String?) {
-        self.numerator = numerator
-        self.denominator = denominator
-        self.image = nil
+}
 
-    }
+class Person: Object {
+    
+    dynamic var user = " "
+    dynamic var schoolYear = " "
     
 }
